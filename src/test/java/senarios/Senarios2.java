@@ -23,5 +23,6 @@ public class Senarios2 {
 		act.moveToElement(element).perform();
 		
 		driver.findElement(By.xpath("//div[@id='nav-flyout-icp']/div[@class='nav-template nav-flyout-content nav-tpl-itemList']/ul/li/a[@lang=\"mr-IN\"]/span/i")).click();
+		System.out.println("Checking the conflicts");
 	}
 }
