@@ -23,11 +23,11 @@ public class Dynamic_Page {
 		Thread.sleep(3000);
 		
 		String browser = "Firefox";
-//		String cpu = driver.findElement(By.xpath("//table[@id='taskTable']/tbody/tr/td[contains(text(),'Chrome')]/following-sibling::td[contains(text(),'%')]")).getText();
-//		System.out.println("cpu = "+cpu);
+		String cpu = driver.findElement(By.xpath("//table[@id='taskTable']/tbody/tr/td[contains(text(),'"+browser+"')]/following-sibling::td[contains(text(),'%')]")).getText();
+		System.out.println("cpu = "+cpu);
 		
-		String cpu=driver.findElement(By.xpath("//table[@id='taskTable']/tbody/tr/td[.='"+browser+"']/following-sibling::td[contains(text(),'%')]")).getText();
-		System.out.println(cpu);
+//		String cpu=driver.findElement(By.xpath("//table[@id='taskTable']/tbody/tr/td[.='"+browser+"']/following-sibling::td[contains(text(),'%')]")).getText();
+//		System.out.println(cpu);
 	}
 
 }
